@@ -87,6 +87,7 @@ define haproxy::balancermember (
   $ports        = undef,
   $server_names = $::hostname,
   $ipaddresses  = $::ipaddress,
+  $weights	= undef,
   $ensure       = 'present',
   $options      = '',
   $define_cookies = false,
